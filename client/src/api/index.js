@@ -21,3 +21,6 @@ export const deleteAnswer = (id, answerId, noOfAnswers) => API.patch(`/answer/de
 
 export const getAllUsers = () => API.get('/user/getAllUsers')
 export const updateProfile = (id, updateData) => API.patch(`/user/update/${id}`, updateData)
+
+//export const getUpvoteCount = (userId) => API.get(`/questions/upvoteCount/${userId}`);
+

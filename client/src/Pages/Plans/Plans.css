@@ -1,0 +1,157 @@
+/* Plans.css */
+.plans-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plan-card {
+  border: 1px solid #ccc;
+  padding: 40px;
+  width: calc(33.33% - 20px); 
+  cursor: pointer;
+  transition: border-color 0.3s ease-in-out;
+  margin-right: 12px; 
+  position: relative;
+  text-align: center;
+}
+
+.plan-card:hover {
+  box-shadow: 0 9px 12px 0 rgba(0,0,0,0.2)
+}
+
+.plan-card:last-child {
+  margin-right: 0;
+}
+
+.plan-card h2 {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  position: relative;
+  margin-top: 15px;
+}
+
+.plan-card h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #292a2c;
+  text-align: left;
+}
+
+.plan-card p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.ribbon{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  overflow: hidden;
+}
+
+.ribbon::before,
+.ribbon::after{
+  position: absolute;
+  content: "";
+  z-index: -1;
+  display: block;
+  border: 7px solid fuchsia;
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+
+.ribbon::before{
+  top: 0px;
+  right: 30px;
+}
+
+.ribbon::after{
+  bottom: 30px;
+  left: 0px;
+}
+
+.ribbon span{
+  position: absolute;
+  top:30px;
+  right: 0;
+  transform: rotate(-45deg);
+  width: 200px;
+  background: fuchsia;
+  padding: 5px 0;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+}
+
+.plan-card button {
+  background-color: darkorange; 
+  color: #fff; 
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.plan-card button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.plan-card button:hover {
+  background-color:darkorange;
+}
+
+
+.price-section{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.price-area{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  padding: 1px;
+}
+
+.price-area .inner-area{
+  height: 100%;
+  width: 100%;
+  line-height: 117px;
+  text-align: center;
+  color:chocolate;
+  position: relative;
+}
+
+.price-area .inner-area .text{
+  font-size: 25px;
+  font-weight: 400;
+  position: absolute;
+  top: -3px;
+  left:5px;
+}
+
+.price-area .inner-area .price{
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .plans-container {
+    flex-direction: row;
+    width: 100%;
+  }
+}

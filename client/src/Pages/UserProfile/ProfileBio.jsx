@@ -1,9 +1,17 @@
 import React from 'react'
+import { useSelector, useDispatch } from 'react-redux';
+import Badges from './Badge';
+
+import './ProfileBio.css';
 
 const ProfileBio = ({ currentProfile }) => {
+  
   return (
-    <div>
-      <div>
+    <div className='bio'>
+       <div>
+       <Badges />
+       </div>
+      <div className='tag-bio'>
         {
           currentProfile?.tags.length !== 0 ? (
             <>

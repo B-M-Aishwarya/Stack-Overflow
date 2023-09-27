@@ -1,0 +1,99 @@
+/* Profile Bio Css */
+
+.tag-bio p{
+    display: inline-block;
+    margin: 10px 0px;
+    padding: 5px 5px;
+    background-color: #e1ecf4;
+    color: #39739d;
+}
+
+.bio {
+    margin-top: 10px;
+}
+
+/* Badge css */
+.badge-container {
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+.badge {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box; 
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .badge-content {
+    display: flex;
+    vertical-align: baseline;
+  }
+  
+  .badge-content img {
+    margin-left: -15px;
+  }
+
+  .badge-content h1 {
+    display:flex;
+    margin-bottom : 20px !important;
+    margin-right: -16px;
+    font-size: 20px;
+  }
+
+  .badge-content p {
+    margin-top: 45px;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .tag-badge {
+    list-style: none; 
+  }
+  .tag-badge p {
+    display: inline-block;
+    background-color:#e1ecf4;
+    border-radius: 5px;
+    padding: 5px 5px;
+  }
+
+  .tag-badge p::before {
+    content: "\2022";
+    color: rgb(124, 120, 93); 
+    width: 1em;
+    margin-right: 0.5em; 
+  }
+
+  @media screen and (max-width: 768px) {
+    .badge-content {
+      display: flex;
+      vertical-align: baseline;
+    }
+
+  .badge-content h1 {
+    display:flex;
+    margin-bottom : 20px !important;
+    margin-right: -16px;
+    font-size: 20px;
+  }
+
+  .badge-content p {
+    margin-top: 45px;
+    font-size: 15px;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .badge {
+    width:calc(43.33%-10px);
+    margin-left:1rem!important;
+    margin-right:2rem!important;
+    margin-top: 1rem!important;
+    margin-bottom: 1rem!important;
+    padding: 1rem!important;
+  }
+}

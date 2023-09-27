@@ -6,8 +6,10 @@ const questionsReducer = (state = { data: null }, action) => {
         return { ...state }
       case 'FETCH_ALL_QUESTIONS':
         return { ...state, data: action.payload }
-        default:
-            return state
+      case 'FETCH_UPVOTE_COUNT':
+        return { ...state, data: action.payload }
+      default:
+          return state
         }
       }
       export default questionsReducer

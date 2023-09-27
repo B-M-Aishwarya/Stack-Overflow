@@ -14,7 +14,12 @@ const Questions = ({ question }) => {
         <p>Answers</p>
       </div>
       <div className='display-question-details'>
-      <Link to={`/Questions/${question._id}`} className='question-title-link'>{question.questionTitle}</Link>
+      <Link to={`/Questions/${question._id}`} className='question-title-link'>
+        {question.questionTitle.length > (window.innerWidth <= 400 ? 70 : 90)
+          ? question.questionTitle.substring(
+            0, window.innerWidth <= 400 ? 70 : 90
+          ) + "..." : question.questionTitle }
+      </Link>
       <div className='display-tags-time'>
          <div className='display-tags'>
             {

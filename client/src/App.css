@@ -6,6 +6,7 @@
     justify-content: space-between;
     margin: 0% auto;
 }
+
 .home-container-2{
     max-width: 1100px;
     width: calc( 100% - 164px );
@@ -20,3 +21,27 @@
       width: 100%;
   }
 }
+
+.App {
+    position: relative;
+  }
+  
+  .chat-icon {
+    position: fixed;
+    bottom: 5%;
+    left: 80%;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 100px;
+    height: 70px;
+    width: 70px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .chat-icon {
+      bottom: 10px; 
+      left: 600px; 
+      height: 60px; 
+      width: 60px;
+    }
+  }

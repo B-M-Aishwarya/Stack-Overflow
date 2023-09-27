@@ -8,8 +8,8 @@ const AboutAuth = () => {
         <p>Unlock new priviledges like voting and commenting</p>
         <p>Save your favouite tags, filters, and jobs</p>
         <p>Earn reputation and badges</p>
-        <p style={{color:"#666767" , fontSize:'13px'}}>Collaborate and share knowledge with a private group for</p>
-        <p style={{color:"#007ac6" , fontSize:'13px'}}>Get stack overflow for Teams free for up to 50 users</p>
+        <p style={{ color:"#666767" , fontSize:'13px' }}>Collaborate and share knowledge with a private group for</p>
+        <p style={{ color:"#007ac6" , fontSize:'13px' }}>Get stack overflow for Teams free for up to 50 users</p>
     </div>
   )
 }

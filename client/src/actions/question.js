@@ -22,8 +22,9 @@ export const fetchAllQuestions = () => async (dispatch) => {
 
 export const voteQuestion = (id, value, userId) => async (dispatch) => {
   try {
-     const {data} = await api.voteQuestion(id, value, userId)
+     const { data } = await api.voteQuestion(id, value, userId)
      dispatch(fetchAllQuestions())
+     
   } catch (error) {
      console.log(error)
   }
@@ -58,3 +59,12 @@ export const deleteAnswer = (id, answerId, noOfAnswers) => async (dispatch) => {
     console.log(error)
   }
 }
+
+/*export const fetchUpvoteCount = (userId) => async (dispatch) => {
+  try {
+    const { data } = await api.getUpvoteCount(userId);
+    dispatch({ type: 'FETCH_UPVOTE_COUNT', payload: data.upvoteCount });
+  } catch (error) {
+    console.log(error);
+  }
+};*/
